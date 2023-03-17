@@ -1,0 +1,48 @@
+.hero {
+	@apply h-auto md:h-auto w-screen px-4 md:px-0   relative bg-[#F5F5F5];
+	background-size: cover;
+	background-position: center;
+	// opacity: 0.06;
+
+	&-brand {
+		@apply h-auto w-screen px-4 md:px-0;
+
+		.row_two {
+			// @apply bg-red-400;
+		}
+	}
+
+	&::before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.01;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		background-size: cover;
+		background-image: url('/images/k_hero_bg.svg');
+	}
+
+	.hero_content {
+		&::after {
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			// @apply br;
+			width: 60%;
+			height: 100%;
+			opacity: 0.05;
+			background-repeat: no-repeat;
+			background-position: left 0%;
+			background-size: cover;
+			background-image: url('/images/k_noise.png');
+		}
+	}
+}
+// bg-[#BFBFBF]

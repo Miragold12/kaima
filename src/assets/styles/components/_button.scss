@@ -1,0 +1,33 @@
+.btn {
+	@apply p-[7px] leading-[15.66px] px-[18px] rounded-md capitalize middle font-eb space-x-2;
+
+	&.primary {
+		@apply bg-sec text-black border-[0.6px] border-sec;
+	}
+
+	&.sec {
+		@apply bg-transparent text-[#110200] border-[0.6px] border-sec;
+	}
+
+	&:disabled {
+		@apply bg-[#e4e5e7] text-[#cccccc] cursor-not-allowed;
+	}
+
+	&.full {
+		@apply w-full centered;
+	}
+
+	&.active {
+		transition: all 0.2s linear;
+
+		// @apply;
+	}
+
+	&.ghost2 {
+		@apply bg-transparent text-[#F1890E] border border-sec;
+	}
+}
+
+footer {
+	// GalanoGrotesque-SemiBold
+}

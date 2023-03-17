@@ -1,0 +1,139 @@
+// tailwindcss configuration files
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+// register all pages styles
+@import '../fonts/fonts';
+
+// register utils sass files
+@import 'utils/media-queries';
+@import 'utils/animation';
+@import 'utils/loader';
+@import 'utils/utils';
+
+// register all pages styles
+
+// register all components styles
+@import 'components/navbar';
+@import 'components/typography';
+@import 'components/button';
+@import 'components/input';
+
+// register all sections styles
+@import 'sections/hero';
+@import 'sections/aboutUs';
+@import 'sections/contactUs';
+@import 'sections/faq';
+@import 'sections/custom_section';
+@import 'sections/footer';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	// font-family: 'Poppins', sans-serif;
+	font-family: 'EB Garamond', serif;
+	scroll-behavior: smooth;
+	// @apply br;
+}
+
+// font-family: ;
+body {
+	overflow-x: hidden !important;
+	&:has(.notification-overlay) {
+		overflow-y: hidden !important;
+	}
+}
+
+#quote {
+	background-image: url('/images/quote/bg.svg');
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: red;
+	// color: red;
+	height: 40vh;
+}
+
+.linear_bg {
+	// background: rgba(37, 22, 5, 0.427);
+	background: linear-gradient(105.91deg, #251605 9.35%, #4d3e2d 38.42%, #4d3e2d 58.49%, #251605 85.44%);
+}
+
+.loader_white {
+	&::before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.2;
+		background-repeat: no-repeat;
+		// background-position: 50% 0;
+		background-size: contain;
+		// background-image: url('/images/k_hero_bg.svg');
+		background-image: url('/images/k_loader_bg.png');
+
+		// background-color: #251605;
+	}
+
+	// .overlay {
+	// 	opacity: 0.92767;
+	// 	// background-color: #251605;
+
+	// 	background: linear-gradient(105.91deg, #251605 9.35%, #4d3e2d 38.42%, #4d3e2d 58.49%, #251605 85.44%);
+	// 	// z-index: 20;
+
+	// 	&::before {
+	// 		content: ' ';
+	// 		display: block;
+	// 		position: absolute;
+	// 		left: 0;
+	// 		top: 0;
+	// 		width: 100%;
+	// 		height: 100%;
+	// 		opacity: 0.2;
+	// 		// z-index: 10;
+	// 		background-repeat: no-repeat;
+	// 		// background-position: 50% 0;
+	// 		background-size: contain;
+	// 		// background-image: url('/images/k_hero_bg.svg');
+	// 		background-image: url('/images/k_loader_bg.png');
+
+	// 		// background-color: red;
+	// 	}
+	// }
+
+	.fadeOut {
+		background-image: url('/images/k_phone_overlay.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+		.fadeOut-brand {
+		background-image: url('/images/k_bran_overlay.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+.mobile_bg_laoder {
+	background-image: url('/images/k_loader_2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.mobile_bg_laoder-brand {
+	background-image: url('/images/k_brand_loader.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.mobile_overlay {
+	// @appl;
+}

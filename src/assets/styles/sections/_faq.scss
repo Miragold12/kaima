@@ -1,0 +1,18 @@
+// Faq-section
+
+.faq-section {
+	// background-image: url('/images/about_us_svg_bg.svg');
+	// background-repeat: no-repeat;
+	// // background-size: c;
+	// // transform: rotateX(180deg);
+	// background-position: top;
+	// @apply br;
+}
+
+.faq-item {
+	max-height: 120px;
+	transition: all ease-in-out 0.3s;
+	&.active {
+		max-height: 300px;
+	}
+}

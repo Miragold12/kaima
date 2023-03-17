@@ -1,0 +1,109 @@
+ol {
+	list-style-type: decimal;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+// centralize content in an element
+.centered {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// horizontally align all items
+.middle {
+	display: flex;
+	align-items: center;
+}
+
+.stack {
+	@apply space-y-3;
+}
+
+.column {
+	@apply flex flex-col space-y-3;
+}
+
+.row {
+	@apply flex items-center justify-between;
+}
+
+.row-center {
+	@apply flex items-center justify-center;
+}
+.col-center {
+	@apply flex-col items-center justify-center;
+}
+
+.grid-center {
+	@apply grid place-content-center;
+}
+
+.br {
+	@apply border border-red-400;
+}
+
+.bb {
+	@apply border border-blue-400;
+}
+
+.bg {
+	@apply border border-green-400;
+}
+
+.gala {
+	font-family: 'galano-bold';
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #d7c96e !important;
+}
+
+.swiper-pagination-bullet {
+	background-color: #d7c96e !important;
+}
+
+// /* for desktop */
+// .whatsapp_float {
+// 	position: fixed;
+// 	width: 50px;
+// 	height: 50px;
+// 	bottom: 40px;
+// 	right: 30px;
+// 	background-color: #25d366;
+// 	color: #fff;
+// 	border-radius: 50px;
+// 	text-align: center;
+// 	font-size: 30px;
+// 	box-shadow: 1px 1px 3px #999;
+// 	z-index: 100;
+// }
+
+// .whatsapp-icon {
+// 	margin-top: -5px;
+// }
+
+// /* for mobile */
+// @media screen and (max-width: 767px) {
+// 	.whatsapp-icon {
+// 		margin-top: -3px;
+// 	}
+
+// 	.whatsapp_float {
+// 		width: 40px;
+// 		height: 40px;
+// 		bottom: 20px;
+// 		right: 10px;
+// 		font-size: 22px;
+// 	}
+// }

@@ -1,0 +1,81 @@
+.custom-input {
+	@apply rounded-md capitalize middle text-sm  w-full relative;
+
+	input,
+	textarea {
+		@apply w-full h-[48px]  border p-3 px-6 rounded-md bg-white;
+
+		border-width: 1.5px;
+		&:focus {
+			outline: 1px solid #4c7031;
+		}
+
+		&:focus + label {
+			top: -3%;
+			left: 5%;
+			transform: translateY(-50%);
+			transition: all 0.2s linear;
+
+			@apply text-pri font-semibold;
+		}
+
+		&.active + label {
+			top: -3%;
+			left: 5%;
+			transform: translateY(-50%);
+			transition: all 0.2s linear;
+
+			@apply text-pri font-semibold;
+		}
+
+		&.error {
+			@apply border border-txt;
+
+			&:focus {
+				outline: 1px solid #d82c0d;
+			}
+		}
+
+		&.error + label {
+			@apply text-txt font-semibold;
+		}
+	}
+
+	textarea {
+		@apply w-full h-[135px] px-3;
+	}
+
+	textarea + label {
+		top: 20%;
+		left: 5%;
+		// transform: translateY(-50%);
+
+		background-color: white;
+		transition: all 0.2s linear;
+
+		@apply px-1;
+	}
+
+	label {
+		top: 50%;
+		left: 5%;
+		transform: translateY(-50%);
+
+		background-color: white;
+		transition: all 0.2s linear;
+
+		@apply px-1;
+	}
+
+	&.primary {
+		@apply bg-pri text-white text-sm;
+	}
+
+	&:disabled {
+		@apply bg-[#e4e5e7] text-[#cccccc] cursor-not-allowed;
+	}
+}
+
+footer {
+	// GalanoGrotesque-SemiBold
+}

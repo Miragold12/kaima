@@ -1,0 +1,44 @@
+.brand {
+	// @apply bg-pri;
+	// background-image: url('/images/about_us_svg_bg.svg');
+	// background: rgb(37, 22, 5);
+	// background: linear-gradient(
+	// 	135deg,
+	// 	rgba(37, 22, 5, 1) 0%,
+	// 	rgba(77, 62, 45, 1) 38%,
+	// 	rgba(77, 62, 45, 1) 60%,
+	// 	rgba(32, 22, 5, 1) 100%
+	// );
+
+	background: linear-gradient(105.91deg, #251605 9.35%, #4d3e2d 38.42%, #4d3e2d 58.49%, #251605 85.44%);
+	// &-image {
+	// 	// box-shadow: -10px -10px 0px 0px #13287d;
+	// }
+
+	// OFFER SECTION
+	// &-offer {
+	// 	// @apply bg-red-500;
+
+	// 	// .about-us-carousel {
+	// 	}npm
+	// }
+	&::before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.01;
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		background-size: cover;
+		background-image: url('/images/k_hero_bg.svg');
+
+		// background-color: red;
+		@include smallPhone {
+			background-image: none;
+		}
+	}
+}

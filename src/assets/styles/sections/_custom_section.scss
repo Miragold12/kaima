@@ -1,0 +1,80 @@
+.services-icon {
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.custom_section {
+	@apply bg-[#F5F5F5] h-auto  md:h-screen w-screen p-4 md:p-14 relative;
+
+	background-image: url('/images/k_custom_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	// background-size: auto auto;
+	background-position: center;
+
+	.black_card {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+
+	.black_card-two {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	.text_card {
+		position: absolute;
+		top: 8%;
+		left: 54px;
+	}
+
+	.text_card-two {
+		position: absolute;
+		top: 8%;
+		right: 54px;
+	}
+
+	.stroke {
+		border: 2px solid;
+		border-image: linear-gradient(
+				180deg,
+				rgba(241, 139, 14, 0.3),
+				rgba(155, 109, 54, 0.3),
+				rgba(159, 102, 35, 0.3)
+			)
+			1;
+	}
+
+	.main_card {
+		width: 80%;
+		height: 570px;
+		position: absolute;
+		top: 8%;
+		right: 0;
+		background-color: #fffffa;
+	}
+
+	.main_card-two {
+		width: 80%;
+		height: 570px;
+		position: absolute;
+		top: 8%;
+		left: 0;
+		background-color: #fffffa;
+	}
+}
+
+#main_card {
+	border: 2px solid;
+	border-image: linear-gradient(180deg, rgba(241, 139, 14, 0.3), rgba(155, 109, 54, 0.3), rgba(159, 102, 35, 0.3)) 1 !important;
+}
+
+.custom_space {
+	background-image: url('/images/k_custom_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	// background-size: auto auto;
+	background-position: center;
+}
