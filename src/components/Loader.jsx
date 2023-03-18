@@ -15,6 +15,7 @@ const Loader = ({ brand }) => {
 
 	return (
 		<AnimatePresence>
+			{/* loader container */}
 			<motion.div
 				id="loader"
 				className="loader_white w-screen relative p-6 md:p-0  h-screen"
@@ -24,7 +25,7 @@ const Loader = ({ brand }) => {
 					<div className="w-full h-full  relative">
 						{brand ? (
 							<Image
-								src={'/images/k_loader.png'}
+								src={'/images/k_loader-brand.png'}
 								priority
 								placeholder="blur"
 								blurDataURL={'/images/k_loader.png'}
@@ -52,6 +53,8 @@ const Loader = ({ brand }) => {
 					}`}
 				></div>
 				<div className={'mobile_overlay'}></div>
+
+
 				{/* overlay */}
 				<motion.div
 					initial={{

@@ -110,15 +110,27 @@ body {
 	// }
 
 	.fadeOut {
-		background-image: url('/images/k_phone_overlay.png');
 		background-size: cover;
 		background-repeat: no-repeat;
+		background-image: url('/images/k_home_1.png');
+		
+		@include smallPhone{
+			background-image: url('/images/k_phone_overlay.png');
+
+		}
+
+	
 	}
 
 		.fadeOut-brand {
-		background-image: url('/images/k_bran_overlay.png');
-		background-size: cover;
-		background-repeat: no-repeat;
+			background-image: url('/images/k_brand_overlaty.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			
+			@include smallPhone{
+				background-image: url('/images/k_bran_overlay.png');
+
+		}
 	}
 }
 

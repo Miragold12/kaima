@@ -72,7 +72,7 @@ const Hero = ({ mode }) => {
 
 						{/* box one */}
 						<div className="col_one md:w-[350px] text-center md:text-left h-auto mt-[150px]   md:-mt-[124px]">
-							<p className="flex text-xs leading-[20px] w-full centered  font-normal text-[#11020080]">
+							<p className="flex text-xs leading-[20px] w-full centered md:justify-start  font-normal text-[#11020080]">
 								Support For Every Step
 							</p>
 
@@ -158,7 +158,7 @@ const Hero = ({ mode }) => {
 						Stylist In Your Pocket
 					</h1>
 
-					<h3 className="font-eb mx-auto md:mx-0  text-[15px] mt-[8px]  md:mt-[16px] font-normal leading-[30px] md:text-[18.75px] text-[rgba(17,2,0,0.4)] text-center w-[311px]">
+					<h3 className="font-eb mx-auto md:mx-0  text-[15px] mt-[8px]  md:mt-[16px] font-normal leading-[30px] md:text-[18.75px] text-[rgba(17,2,0,0.4)] text-center md:text-left w-[311px]">
 						Find everything for a perfect fashion lifestyle in one place. Unlock new
 						opportunities through great appearance.
 					</h3>

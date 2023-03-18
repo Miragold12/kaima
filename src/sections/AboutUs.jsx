@@ -103,7 +103,8 @@ const Brown = ({ mode }) => {
 								<h1 className=" font-personal relative text-[18.75] md:text-[29.3px] text-txt-white leading-[44.83px] md:leading-[70.06px] ">
 									Professional Personal
 								</h1>
-								<div className=" middle space-x-2  mx-auto md:mx-0 justify-center ">
+
+								<div className=" middle space-x-2  mx-auto md:mx-0 justify-center md:justify-start">
 									<h1 className="font-personal relative text-lg md:text-[29.3px] text-txt-white leading-[70.06px]">
 										Styling For
 									</h1>

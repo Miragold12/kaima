@@ -1,6 +1,11 @@
 footer {
 	height: 90vh;
 
+	@include smallPhone{
+	height: auto;
+
+	}
+
 	.card_row {
 		// height: 40vh;
 	}
@@ -23,6 +28,13 @@ footer {
 		background-repeat: no-repeat;
 		background-position: 50% 0;
 		background-size: cover;
+
 		background-image: url('/images/k_hero_bg.svg');
+		@include smallPhone{
+			background-image:none;
+
+		
+			}
+	
 	}
 }

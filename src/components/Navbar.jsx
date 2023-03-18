@@ -110,7 +110,7 @@ const Navbar = ({ toggle, active }) => {
 
 	return (
 		<>
-			<nav className={`navbar `}>
+			<nav className={`navbar ${active && 'hidden md:flex'}`}>
 				<div className={`second_row   w-full`}>
 					{/* LOGO */}
 					<div className="logo_nav-container space-x-11  middle">

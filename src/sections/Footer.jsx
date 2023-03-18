@@ -77,15 +77,15 @@ const Footer = () => {
 	}
 
 	return (
-		<footer className=" w-full linear_bg md:px-[60px] relative  ">
+		<footer className=" w-full linear_bg md:px-[60px] relative py-6 md:py-0">
 			{/* row one */}
-			<div className=" flex flex-col space-y-3 md:space-y-0	 h-1/2  gap-5 md:gap-0 md:flex-row justify-center items-center ">
-				<div className="text_box text-txt-white space-y-3 px-4">
-					<h1 className=" font-personal font-normal text-[18.75px] leading-[44.83px]">
+			<div className=" flex flex-col space-y-3 md:space-y-0  	 h-1/2  gap-5 md:gap-0 md:flex-row justify-center items-start md:items-center ">
+				<div className="text_box text-txt-white space-y-3 ml-4 md:ml-0">
+					<h1 className=" font-personal font-normal text-[18.75px] leading-[28.69px] md:leading-[44.83px]">
 						Take A Look Around
 					</h1>
 
-					<h3 className="text-medium w-[303px] md:w-auto text-[18.75px] leading-[30px] text-txt-white-fade font-eb">
+					<h3 className="text-medium w-[211px] md:w-auto md:text-[18.75px] text-[12px]  md:leading-[30px] leading-[20px] text-txt-white-fade font-eb">
 						Let us walk you through our many interesting features so you know how much we have
 						in store for you.
 					</h3>
@@ -105,30 +105,30 @@ const Footer = () => {
 			</div>
 
 			{/* row two-- */}
-			<div className="  md:row footer_row px-4 md:px-0 flex flex-col md:flex-row text-[#f5f5f5] font-eb font-normal  h-1/2  gap-6 md:justify items-center relative ">
-				<h3 className="text-medium text-xs md:text-sm text-[#f5f5f54d] absolute bottom-4 right-4 md:right-[0] md:bottom-[10%]">
+			<div className="mt-11 md:mt-0 	  md:row footer_row px-4 md:px-0 flex flex-col md:flex-row text-[#f5f5f5] font-eb font-normal  h-1/2  gap-6 md:justify items-start md:items-center relative ">
+				<h3 className="text-medium text-[8px]  md:text-sm text-[#f5f5f54d] absolute bottom-0 right-0 md:right-[0] md:bottom-[10%]">
 					A Product Of Kaima Business LTD, 2023
 				</h3>
 
 				{/* ---------------- */}
-				<div className="logo_box space-y-4 -mt-[10px]">
+				<div className="logo_box space-y-4  md:-mt-[10px]">
 					<Image src="/icons/k_logo_sec.svg" alt="kaima logo" width={89} height={48} />
 					<div className="space-y-2">
-						<h3 className="text-medium text-xs ">Kaima400@gmail.com</h3>
-						<h3 className="text-medium text-xs ">CC 2023</h3>
+						<h3 className="text-medium text-[8px] md:text-xs ">Kaima400@gmail.com</h3>
+						<h3 className="text-medium text-[8px] md:text-xs  ">CC 2023</h3>
 					</div>
 				</div>
 
 				<div className="hidden md:flex w-[100px]"></div>
 
 				{/* -------------- */}
-				<div className="grid-cols-3 gap-y-8 gap-4 md:gap-0 md:grid-cols-5 w-full md:w-[70%] grid ">
-					<div className="col_list  ">
+				<div className="grid-cols-3 gap-y-8 gap-4 md:gap-0 text-[#F5F5F5B2] md:grid-cols-5 w-full md:w-[70%] grid ">
+					<div className="col_list text-center ">
 						{navOne.map((i, k) => (
 							<h3
 								key={k}
 								onClick={() => handleScrollToSection(i.link)}
-								className="text-medium text-xs  cursor-pointer"
+								className="text-medium text-[8px] md:text-xs  cursor-pointer"
 							>
 								{i.name}
 							</h3>
@@ -137,7 +137,7 @@ const Footer = () => {
 
 					<div className="col_list   ">
 						{navTwo.map((i, k) => (
-							<h3 key={k} className="text-medium text-xs ">
+							<h3 key={k} className="text-medium text-[8px] md:text-xs ">
 								{i.name}
 							</h3>
 						))}
@@ -145,7 +145,7 @@ const Footer = () => {
 
 					<div className="col_list  ">
 						{navThree.map((i, k) => (
-							<h3 key={k} className="text-medium text-xs ">
+							<h3 key={k} className="text-medium text-[8px] md:text-xs ">
 								{i.name}
 							</h3>
 						))}

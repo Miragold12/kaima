@@ -64,24 +64,25 @@ const ContactUs = () => {
 	}, []);
 
 	return (
-		<section id="contact" ref={contactRef} className="contact_us  h-auto relative md:mt-4">
-			<div className="full contact_us-waiting  md:py-0">
+		<section id="contact" ref={contactRef} className="contact_us  h-auto relative md:mt-4 ">
+
+			<div className="full contact_us-waiting px-4 md:py-0 py-20">
 				<Navbar active />
-				<div className="action_container text-txt-white mt-[96px] text-center">
+				<div className="action_container  text-txt-white md:mt-[96px] text-center flex flex-col items-center">
 					<h3 className="text-sm text-txt-white-fade capitalize">get early access</h3>
 
-					<h1 className=" font-personal text-[18.75px] leading-[44.83px] mt-[8px] ">
+					<h1 className=" font-personal text-[12px] w-[200px] md:text-[18.75px] leading-[26.89px] md:w-auto md:mx-auto md:leading-[44.83px] mt-[5px] md:mt-[8px] ">
 						Be The First To Know When We Launch
 					</h1>
 
-					<>
+					<> 
 						{/* FORM */}
 						<form
 							onSubmit={formik.handleSubmit}
 							action=""
-							className="form_box flex gap-6 flex-col md:flex-row  mt-[47px] justify-center items-center md:items-end"
+							className="form_box flex gap-6 flex-col md:flex-row  mt-[40px]  md:mt-[47px] justify-center items-center md:items-end"
 						>
-							<div className="form_group flex flex-col md:flex-row gap-6">
+							<div className="form_group flex flex-col md:flex-row gap-6 ">
 								<div className="input_component text-center w-full md:w-[200px] h-auto text-sm text-[#F5F5F5] ">
 									<label htmlFor="" className="font-eb text-xs leading-[15.66px] ">
 										First Name
