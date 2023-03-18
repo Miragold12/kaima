@@ -37,6 +37,9 @@ const ContactUs = () => {
 				// setIsSuccessfull(true);
 
 				// setIsLoading(false);
+						setTimeout(() => {
+						setIsLoading(false);
+					}, 2000);
 
 				return;
 			} catch (error) {}
@@ -105,7 +108,7 @@ const ContactUs = () => {
 								/>
 
 								{/* text */}
-								<h1 className="font-normal font-personal text-xs mt-8 text-txt-white capitalize">
+								<h1 className="font-normal font-personal text-xs md:text-[18.75px]  mt-8 text-txt-white capitalize">
 									We are working on it...
 								</h1>
 							</div>
@@ -191,7 +194,7 @@ const ContactUs = () => {
 					onClick={(e) => handleCloseModal(e)}
 					className=" fixed top-0 left-0 w-full h-full bg-[#000000b9] centered z-30"
 				>
-					<div className="alert w-[80%] bg-txt-white h-auto p-[60px] centered fadeIn">
+					<div className="alert w-[90%] md:w-[80%] bg-txt-white h-auto md:p-[60px] p-[40px] centered fadeIn">
 						<div className="loader_container flex flex-col items-center  text-center">
 							{/* image */}
 							<Image
@@ -203,16 +206,16 @@ const ContactUs = () => {
 							/>
 
 							{/* text */}
-							<h1 className="font-normal font-personal text-[18.75px] leading-[44.83px] mt-8 text-txt capitalize">
+							<h1 className="font-normal font-personal text-xs md:text-[18.75px]  leading-[44.83px] mt-8 text-txt capitalize">
 								You’ve Been Added To The Waitlist
 							</h1>
 
-							<h1 className="font-normal font-eb text-[18.75px] leading-[30.83px] mt-[36px] text-[#110200B2] w-[380px] ">
+							<h1 className="font-normal font-eb text-xs md:text-[18.75px]  leading-[30.83px] mt-[36px] text-[#110200B2] md:w-[380px] ">
 								Thank you for choosing to take your fashion lifestyle to a whole other
 								level
 							</h1>
 
-							<h1 className="font-normal font-eb text-[18.75px] leading-[30.83px] mt-[12px] text-[#110200B2] w-[380px]">
+							<h1 className="font-normal font-eb text-xs md:text-[18.75px] leading-[30.83px] mt-[12px] text-[#110200B2] md:w-[380px]">
 								Sit back and relax, we will hit you up once we are live!
 							</h1>
 						</div>

@@ -60,12 +60,21 @@ const Brand = () => {
 						<Loader brand/>
 			<Hero mode={'brand'} />
 			<AboutUs mode={'brand'} />
-
+{/* 
 			{sectionData.map((i, k) => (
 				<div className="" key={k}>
 					<CustomSection sectionId={i.id} typeTwo={i.typeTwo} d={i} />
 				</div>
-			))}
+			))} */}
+
+			
+			<div className="bg-[#F5F5F5] space-y-[58px] pb-[40px] md:pb-[0] md:space-y-0  custom_space">
+				{sectionData.map((i, k) => (
+					<div className="" key={k}>
+						<CustomSection sectionId={i.id} typeTwo={i.typeTwo} d={i} />
+					</div>
+				))}
+			</div>
 
 			<ContactUs />
 		</div>
