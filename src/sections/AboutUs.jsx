@@ -67,7 +67,7 @@ const Brown = ({ mode }) => {
 
 							{/* mobile */}
 
-							<h1 className="md:hidden font-personal text-lg md:text-[25.3px] text-txt-white leading-[190%] ">
+							<h1 className="md:hidden font-personal text-[18.75] md:text-[25.3px] text-txt-white leading-[44.83px] ">
 								Sales And Exposure
 							</h1>
 
@@ -80,16 +80,20 @@ const Brown = ({ mode }) => {
 
 							{/* mobile */}
 
-							<h3 className="md:hidden text-medium text-[15px] md:text-lg text-txt-white-fade">
+							<h3 className="md:hidden  mt-[8px] w-[270px] mx-auto  text-[15px] md:text-[18.75] text-txt-white-fade leadiing-[30px]">
 								We connect you to paying customers that see the value your brand brings
 								to the table.
 							</h3>
 
-							<div className="middle justify-center md:justify-start mt-[32px]  space-x-2">
+							<div className="middle justify-center md:justify-start md:mt-[32px] mt-[24px]  space-x-2">
 								<div className="md:hidden w-4"></div>
 
 								<Button text={'Get Started'} style={{ color: '#fff' }} />
-								<Image src={'/icons/k_arrow.svg'} alt={'hero'} width={31} height={29} />
+								<Image src={'/icons/k_arrow.svg'} alt={'hero'} width={31} height={29} 
+								
+								
+									className=" mt-4 md:mt-0	"
+								/>
 							</div>
 						</div>
 					) : (

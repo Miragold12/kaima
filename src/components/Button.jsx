@@ -33,22 +33,10 @@ const navArray = [
 // listen to browser scroll
 
 const Button = ({ isLoading, text, click, icon, type, variant, disabled, full, ...rest }) => {
-	const [scrollPosition, setScrollPosition] = useState(0);
 
 	// console.log('the current scroll positio is', scrollPosition);
 
-	function handleScroll() {
-		let currentScroll = window.scrollY;
-		setScrollPosition(Math.floor(currentScroll));
-	}
 
-	let user = {
-		username: 'idris ifeoluwa',
-		email: 'idrisloove@gmail.com',
-		phonenumber: '09077726791',
-		role: 'spaceseeker',
-		password: 'a24627DD4#'
-	};
 
 	if (type == 'ghost2') {
 		return (
@@ -82,6 +70,7 @@ const Button = ({ isLoading, text, click, icon, type, variant, disabled, full, .
 			disabled={disabled || isLoading}
 			onClick={click}
 			{...rest}
+			type={type}
 			className={`btn ${full && 'full'}  ${variant === 'secondary' ? 'sec' : 'primary'}`}
 		>
 			{isLoading && (

@@ -38,6 +38,13 @@
 	animation: pulse 4000ms ease-in-out 1s infinite normal none;
 }
 
+.loader_icon {
+	animation: rotate 2000ms linear 1s infinite normal none;
+}
+
+.scaleOut {
+	animation: scaleOut 1000ms ease-in-out 0s normal none;
+}
 // basic reusable animations
 
 /* animations keyFrames */
@@ -48,6 +55,20 @@
 
 	100% {
 		opacity: 1;
+	}
+}
+
+@keyframes scaleOut {
+	0% {
+		transform: scale(0.8);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
 	}
 }
 
@@ -128,6 +149,20 @@
 
 	100% {
 		transform: scale(1);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
 	}
 }
 /* animations keyFrames */
