@@ -21,7 +21,7 @@ const Brown = ({ mode }) => {
 				<Navbar active />
 
 				{/* main content */}
-				<div className="hero_content relative md:px-[56px] flex flex-col md:flex-row items-center  w-full h-auto py-[46px] md:py-0 ">
+				<div className="hero_content relative px-0 md:px-[56px] flex flex-col md:flex-row items-center   w-full h-auto py-[46px] md:py-0 ">
 					{/* botom right text */}
 					{mode === 'brand' ? (
 						<p className=" hidden md:block  text-[#F5F5F533] text-xs text-left w-[300px] absolute bottom-0 right-11">
@@ -35,7 +35,7 @@ const Brown = ({ mode }) => {
 					)}
 
 					{/* IMAGE sn3D  slider section*/}
-					<div className="col_two">
+					<div className="col_two w-full md:w-auto relative">
 						{/* <Image
 							src={
 								mode === 'brand'
@@ -170,7 +170,7 @@ const Brown = ({ mode }) => {
 							</div>
 						</div>
 					) : (
-						<div className="col_one w-full px-4  p-6  md:p-0   text-center md:text-left md:w-[490px]">
+						<div className="col_one w-full px-4   p-6  md:p-0   text-center md:text-left md:w-[490px]">
 							{/* big text */}
 							<p className="text-[12px] font-eb leading-[20px] text-[#f5f5f580]">
 								You Deserve Better Fashion
