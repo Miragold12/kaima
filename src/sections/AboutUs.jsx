@@ -52,12 +52,13 @@ const Brown = ({ mode }) => {
 							slidesPerView={2.5}
 							// navigation
 							pagination={{ clickable: true }}
-							scrollbar={{ draggable: true }}
+							// scrollbar={{ draggable: true }}
 							onSwiper={(swiper) => console.log(swiper)}
 							onSlideChange={() => console.log('slide change')}
 							effect={'coverflow'}
 							grabCursor={true}
 							centeredSlides={true}
+							loop
 							// slidesPerView={'auto'}
 							coverflowEffect={{
 								// rotate: 50,

@@ -193,6 +193,17 @@ body {
 	width: 540px;
 	@include smallPhone{
 	width: 300px;
-// border: 1px solid red;
 	}
+}
+
+.swiper-pagination{
+bottom: 0px !important;
+z-index: 9999999999999999;
+position: relative;
+text-align: center;
+
+&-bullet{
+	background-color: #F1890E;
+}
+
 }
