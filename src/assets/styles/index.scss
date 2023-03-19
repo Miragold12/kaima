@@ -210,3 +210,8 @@ text-align: center;
 }
 
 }
+
+.swiper-slide-next, .swiper-slide-prev{
+	transform: scale(0.9) !important;
+	opacity: 0.8 !important;
+}

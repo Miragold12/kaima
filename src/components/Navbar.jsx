@@ -59,8 +59,8 @@ const Navbar = ({ toggle, active }) => {
 	function handleCTO() {
 		let { pathname } = router;
 
-		console.log(pathname);
-		if (pathname === '/brand') router.push('/');
+		console.log(pathname === '/brand');
+		if (pathname === '/brand') return router.push('/');
 		router.push('/brand');
 	}
 
