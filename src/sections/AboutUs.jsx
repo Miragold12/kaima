@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import React, { useRef, useEffect } from 'react';
+import { EffectCoverflow, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import Navbar from 'components/Navbar';
 import Button from 'components/Button';
 
@@ -32,9 +34,9 @@ const Brown = ({ mode }) => {
 						</p>
 					)}
 
-					{/* IMAGE */}
+					{/* IMAGE sn3D  slider section*/}
 					<div className="col_two">
-						<Image
+						{/* <Image
 							src={
 								mode === 'brand'
 									? '/images/k_slider_imgs2.png'
@@ -43,8 +45,76 @@ const Brown = ({ mode }) => {
 							alt={'hero'}
 							width={620}
 							height={730}
-						/>
+						/> */}
+						<Swiper
+							// install Swiper modules
+							spaceBetween={-50}
+							slidesPerView={2.5}
+							// navigation
+							pagination={{ clickable: true }}
+							scrollbar={{ draggable: true }}
+							onSwiper={(swiper) => console.log(swiper)}
+							onSlideChange={() => console.log('slide change')}
+							effect={'coverflow'}
+							grabCursor={true}
+							centeredSlides={true}
+							// slidesPerView={'auto'}
+							coverflowEffect={{
+								// rotate: 50,
+								stretch: 0,
+								depth: 100,
+								modifier: 1,
+								slideShadows: true
+							}}
+							modules={[EffectCoverflow, Pagination]}
+							className="mySwiper"
+						>
+							<SwiperSlide>
+								<Image
+									src={'/images/slider/one.png'}
+									alt={'hero'}
+									width={261}
+									height={480}
+								/>
+							</SwiperSlide>
+
+							<SwiperSlide>
+								<Image
+									src={'/images/slider/one.png'}
+									alt={'hero'}
+									width={261}
+									height={480}
+								/>
+							</SwiperSlide>
+
+							<SwiperSlide>
+								<Image
+									src={'/images/slider/one.png'}
+									alt={'hero'}
+									width={261}
+									height={480}
+								/>
+							</SwiperSlide>
+
+							<SwiperSlide>
+								<Image
+									src={'/images/slider/one.png'}
+									alt={'hero'}
+									width={261}
+									height={480}
+								/>
+							</SwiperSlide>
+							<SwiperSlide>
+								<Image
+									src={'/images/slider/one.png'}
+									alt={'hero'}
+									width={261}
+									height={480}
+								/>
+							</SwiperSlide>
+						</Swiper>
 					</div>
+					{/*  */}
 
 					<div className="space_x h-8 md:h-0 md:w-[100px]"></div>
 
@@ -89,9 +159,11 @@ const Brown = ({ mode }) => {
 								<div className="md:hidden w-4"></div>
 
 								<Button text={'Get Started'} style={{ color: '#fff' }} />
-								<Image src={'/icons/k_arrow.svg'} alt={'hero'} width={31} height={29} 
-								
-								
+								<Image
+									src={'/icons/k_arrow.svg'}
+									alt={'hero'}
+									width={31}
+									height={29}
 									className=" mt-4 md:mt-0	"
 								/>
 							</div>
