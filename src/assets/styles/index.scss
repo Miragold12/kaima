@@ -191,6 +191,7 @@ body {
 
 .mySwiper{
 	width: 540px;
+	margin-top: 40px;
 	@include smallPhone{
 	width: 300px;
 	}
@@ -198,9 +199,11 @@ body {
 
 .swiper-pagination{
 bottom: 0px !important;
-z-index: 9999999999999999;
-position: relative;
+// z-index: 9999999999999999;
+position: relative !important;
 text-align: center;
+	// margin-top: 20px;
+// border: 1px solid red;
 
 &-bullet{
 	background-color: #F1890E;
