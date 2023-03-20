@@ -57,7 +57,7 @@ const Hero = ({ mode }) => {
 					</div>
 
 					{/* rmedia --row */}
-					<div className="row_two  w-full flex flex-col-reverse md:flex-row h-auto py-4 gap-4 md:gap-[60px] relative justify-center middle mt-[22px] md:mt-[60px]">
+					<div className="row_two ring-row  w-full flex flex-col-reverse md:flex-row h-auto py-4 gap-4 md:gap-[60px] relative justify-center middle mt-[22px] md:mt-[60px]">
 						{/* fade text right top */}
 						<p className="hidden md:flex  text-[#11020033] leading-[20px]  text-xs  w-[310px] absolute top-0 right-[58px]">
 							Kaima is fully committed to your growth, not just as a business but also as a
@@ -109,6 +109,7 @@ const Hero = ({ mode }) => {
 
 						{/* centered image ---mobile */}
 						<div className="relative md:hidden h-[280px] w-[250px] ">
+				
 							<div className="middle_image absolute -top-[40%]  ">
 								<Image
 									src={'/images/brand/K_brand.png'}
