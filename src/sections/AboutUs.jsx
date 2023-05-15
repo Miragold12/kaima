@@ -53,7 +53,7 @@ const Brown = ({ mode }) => {
 					)}
 
 					{/* IMAGE sn3D  slider section*/}
-					<div className="col_two w-full md:w-auto relative ml-12">
+					<div className="col_two w-full md:w-auto relative md:ml-12">
 						{
 							mode !== 'brand' ? (<Swiper
 							// install Swiper modules
@@ -81,7 +81,7 @@ const Brown = ({ mode }) => {
 						>
 							{sliderArr.map((item, i) => (
 								<SwiperSlide key={i}>
-									<Image src={item} alt={'hero'} width={381} height={600} />
+									<Image src={item} alt={'hero'} width={260} height={498} />
 								</SwiperSlide>
 							))}
 						</Swiper>): (<Swiper
