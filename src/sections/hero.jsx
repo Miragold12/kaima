@@ -65,7 +65,7 @@ const Hero = ({ mode }) => {
 						<div className="relative hidden md:block  h-[400px] w-[250px] ">
 							<div className="middle_image absolute  -top-[30%] ">
 								<Image
-									src={'/images/brand/K_brand.png'}
+									src={'/images/brand/K_brand.webp'}
 									alt={'hero'}
 									width={300}
 									height={430}
