@@ -95,7 +95,7 @@ const Footer = () => {
 
 				{/* IMAGE -destop screen*/}
 				<div className="col_two hidden md:block  relative w-[816px] h-[200px]">
-					<Image src={'/images/k_brandfunc.png'} alt={'hero'} fill />
+					<Image src={'/images/k_brandfunc.png'} alt={'hero'} fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
 				</div>
 
 				{/* IMAGE -mobile screen*/}

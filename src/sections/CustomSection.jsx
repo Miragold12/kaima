@@ -1,50 +1,23 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
-
 import 'swiper/css/effect-fade';
 import Button from 'components/Button';
+import { handleScrollToSection } from 'utils';
 
-// typeTwo: true,
-// 		fadeText: 'we stand in as translators;, a bridge between you and true satisfaction in your styling experience',
-// 		mainText: 'Affordable Fashion',
-// 		subText: 'Find what works best for your pocket',
-// 		img: '/images/k_custom_img_four.png',
-// 		id: 'find'
+
 
 const CustomSection = ({ sectionId, typeTwo, d }) => {
-	const [hover, setHover] = useState(false);
 
-	function handleScrollToSection(id) {
-		// console.log(id);
-		const element = document.getElementById(id);
-		element?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-	}
+
 
 	const sectionRef = useRef(null);
 
-	// useEffect(() => {
-	// 	const observer = new IntersectionObserver((entries) => {
-	// 		entries.forEach((entry) => {
-	// 			if (entry.isIntersecting) {
-	// 				console.log('--------------------------------');
-	// 				entry.target.scrollIntoView({
-	// 					behavior: 'smooth',
-	// 					block: 'start',
-	// 					inline: 'start'
-	// 				});
-	// 			}
-	// 		});
-	// 	});
 
-	// 	observer.observe(sectionRef.current);
-
-	// 	return () => observer.disconnect();
-	// }, []);
 
 	return (
 		<>
 			{/* DESTIP VIEW */}
-			<section
+			<div
 				id={sectionId}
 				ref={sectionRef}
 				className="custom_section md:cnetered hidden  bg-red-400 md:flex"
@@ -98,11 +71,11 @@ const CustomSection = ({ sectionId, typeTwo, d }) => {
 
 						{/* IMAGE */}
 						<div className="col_two relative h-full w-[70%]">
-							<Image src={d.img} alt={'hero'} fill />
+							<Image src={d.img} alt={'hero'} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 
 			{/* FOR MOBIL VIEW */}
 			<section id={sectionId} ref={sectionRef} className="custom_section py-[58pxb]   md:hidden ">
@@ -139,7 +112,7 @@ const CustomSection = ({ sectionId, typeTwo, d }) => {
 
 					{/* IMAGE ---destop*/}
 					<div className="col_two relative h-full w-[70%] hidden md:flex">
-						<Image src={d.img} alt={'hero'} fill />
+						<Image src={d.img} alt={'hero'} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
 					</div>
 
 					{/* IMAGE ---mobile*/}

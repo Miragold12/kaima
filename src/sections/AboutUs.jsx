@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { EffectCoverflow, Pagination } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -9,6 +9,7 @@ import 'swiper/css/effect-fade';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Navbar from 'components/Navbar';
 import Button from 'components/Button';
+import {handleScrollToSection} from 'utils'
 
 const Brown = ({ mode }) => {
 	const sliderArr = [
@@ -30,19 +31,12 @@ const Brown = ({ mode }) => {
 	];
 
 
-	function handleScrollToSection(id) {
-		// console.log(id);
-		const element = document.getElementById(id);
-		element?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-		console.log('i scrolled');
-	}
 
 
 	return (
 		<section
 			id="aboutus"
 			className="bg-[#F5F5F5] w-screen  md:h-screen py-6 border border-transparent"
-			// ref={sectionRef}
 		>
 			<div className="brand w-full h-full   px-4 md:px-0 py-3 relative">
 				<Navbar active />
@@ -260,7 +254,6 @@ const Brown = ({ mode }) => {
 					)}
 				</div>
 			</div>
-			{/* <OfferSpaces /> */}
 		</section>
 	);
 };

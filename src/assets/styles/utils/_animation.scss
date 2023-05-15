@@ -140,15 +140,20 @@
 
 @keyframes pulse {
 	0% {
-		transform: scale(1);
+		// transform: scale(1);
+		font-size: 48.78px;
 	}
 
 	50% {
-		transform: scale(1.1);
+		// transform: scale(1.1);
+		font-size: 52.78px;
+
 	}
 
 	100% {
-		transform: scale(1);
+		// transform: scale(1);
+		font-size: 48.78px;
+
 	}
 }
 

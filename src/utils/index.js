@@ -8,3 +8,9 @@ export const disableBodyScroll = (val) => {
 		bodyEle.style.overflowY = 'hidden';
 	}
 };
+
+
+export function handleScrollToSection(id) {
+	const element = document.getElementById(id);
+	element?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+}

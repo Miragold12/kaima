@@ -41,7 +41,7 @@
 			background-repeat: no-repeat;
 			background-position: left 0%;
 			background-size: cover;
-			background-image: url('/images/k_noise.webp');
+			background-image: url('/images/k_noise.png');
 		}
 	}
 }
@@ -54,12 +54,12 @@
 	background-size: cover;
 	background-position: center;
 
-	background-image: url('/images/rings.webp');
+	background-image: url('/images/rings.png');
 	
 	@include smallPhone{
 	// background-position: center;
 	// background-size: 500px;
-	background-image: url('/images/sm_rings.webp');
+	background-image: url('/images/sm_rings.png');
 
 
 }

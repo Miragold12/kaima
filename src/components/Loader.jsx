@@ -1,12 +1,11 @@
 import Image from 'next/image';
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/effect-fade';
-import Navbar from 'components/Navbar';
-import Button from 'components/Button';
+
 import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 
@@ -73,7 +72,7 @@ const Loader = ({ brand }) => {
 					} `}
 				>
 					<div className="content ">
-						<div className="mx-auto  centered">
+						<div className="mx-auto w-auto h-auto  centered">
 							<Image src="/images/k_logo.svg" alt="kaima logo" width={159} height={90} />
 						</div>
 
@@ -89,3 +88,4 @@ const Loader = ({ brand }) => {
 };
 
 export default Loader;
+ 

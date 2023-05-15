@@ -34,3 +34,39 @@ export const sectionData = [
 		id: 'find'
 	}
 ];
+
+
+export const sectionData2 = [
+	{
+		typeTwo: false,
+		fadeText: 'Kaima aims to dress you up as your best self. ',
+		mainText: 'Expert Styling Advice',
+		subText: 'Always know what to wear',
+		img: '/images/k_custom_img_one.webp',
+		id: 'expert'
+	},
+	{
+		typeTwo: true,
+		fadeText: 'The focus here is personalizing your style to your goals and needs so that every single outfit represents your best self. ',
+		mainText: 'Access The Best Outfits Easily',
+		subText: 'Always have what to wear',
+		img: '/images/k_custom_img_two.webp',
+		id: 'access'
+	},
+	{
+		typeTwo: false,
+		fadeText: 'Styling is a language but because it can be complex, it is sometimes not a very easy one to speak, ',
+		mainText: 'Show Up As Your Best Self',
+		subText: 'With looks that fit your personal needs',
+		img: '/images/k_custom_img_three.webp',
+		id: 'showUp'
+	},
+	{
+		typeTwo: true,
+		fadeText: 'we stand in as translators;, a bridge between you and true satisfaction in your styling experience',
+		mainText: 'Timeless Fashion',
+		subText: 'Curate a wardrobe you’re always proud of.',
+		img: '/images/k_custom_img_four.webp',
+		id: 'find'
+	}
+];

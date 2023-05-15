@@ -1,53 +1,20 @@
 import Image from 'next/image';
-import React, { useEffect } from 'react';
-// --------
-// import { motion } from 'framer-motion';
-// import { Fade } from 'react-awesome-reveal';
+import React from 'react';
 import 'swiper/css/effect-fade';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import Button from 'components/Button';
 import Navbar from 'components/Navbar';
+import { handleScrollToSection } from 'utils';
 
 const Hero = ({ mode }) => {
-	const [searchValue, setSearchValue] = React.useState('');
-	const router = useRouter();
 
-	function handleScrollToSection(id) {
-		// console.log(id);
-		const element = document.getElementById(id);
-		element?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-	}
 
-	// useEffect(() => {
-	// 	const observer = new IntersectionObserver((entries) => {
-	// 		entries.forEach((entry) => {
-	// 			console.log('--------------------------------', entry.isIntersecting);
-	// 			if (entry.isIntersecting) {
-	// 				document.getElementById('goto_about').click();
 
-	// 				console.log(document.getElementById('goto_about'));
-	// 				// entry.target.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-	// 			}
-	// 		}),
-	// 			{ threshold: 0.5 };
-	// 	});
-
-	// 	// console.log(IntersectionObserverEntry);
-	// 	observer.observe(document.getElementById('about'));
-
-	// 	return () => observer.disconnect();
-	// });
 
 	if (mode == 'brand') {
 		return (
 			<section id="home" className="hero hero-brand w-full  md:h-[110vh]">
 				<Navbar />
-
-				{/* <p className="hidden md:flex  text-[#11020033] leading-[20px]  text-xs w-[310px] absolute bottom-11 left-11">
-					We make it easy for you to build a business in the fashion space by growing the
-					credibility of your brand.
-				</p> */}
-
 				<div className="hero_content hero_content-brand  relative flex md:gap-0 flex-col  mt-4  w-full h-full ">
 					{/* TEXT  -Row*/}
 					<div className="row_one w-full ">
@@ -145,12 +112,10 @@ const Hero = ({ mode }) => {
 	return (
 		<section id="home" className="hero w-full  ">
 			<Navbar />
-			{/* <button id="goto_about" onClick={() => handleScrollToSection('about')} className="hidden"></button> */}
-
 			{/* HERO CONTENT */}
-			<div className="hero_content  relative pt-[10px]  md:pb-[100px]  md:mt-0 flex flex-col-reverse md:flex-row items-center md:justify-between w-full md:pl-[60px]   mx-auto h-auto ">
+			<div className="hero_content z-10  relative pt-[10px]  md:pb-[100px]  md:mt-0 flex flex-col-reverse md:flex-row items-center md:justify-between w-full md:pl-[60px]   mx-auto h-auto ">
 				{/* TEXT */}
-				<div className="col_one w-full px-4  p-6 md:p-0  text-center md:text-left md:w-[490px] ">
+				<div className="col_one w-full px-4  p-6 md:p-0  text-center md:text-left md:w-[490px] z-20">
 					<p className="text-xs leading-[20px] font-eb text-[#11020081]">
 						Style That Speaks Confidence!
 					</p>
@@ -164,7 +129,7 @@ const Hero = ({ mode }) => {
 						opportunities through great appearance.
 					</h3>
 
-					<div className="w-full flex justify-center md:justify-start mt-[24px] md:mt-[39px]">
+					<div className="w-full z-20 flex justify-center md:justify-start mt-[24px] md:mt-[39px]">
 						<Button
 							text={'Get early access'}
 							style={{ padding: '7px 22px' }}
