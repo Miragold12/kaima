@@ -41,21 +41,21 @@ const Home = () => {
 
 	// USEFEECTS ---------------------------
 
-	// useEffect(() => {
-	// 	setTimeout(() => {
-	// 		setShowLoader(false);
-	// 	}, 8000);
+	useEffect(() => {
+		setTimeout(() => {
+			setShowLoader(false);
+		}, 8000);
 
-	// 	setTimeout(() => {
-	// 		handleScrollToSection('home');
-	// 		// removeLoader();
-	// 	}, 9000);
+		setTimeout(() => {
+			handleScrollToSection('home');
+			// removeLoader();
+		}, 9000);
 
-	// 	setTimeout(() => {
-	// 		// handleScrollToSection('home');
-	// 		removeLoader();
-	// 	}, 10000);
-	// }, []);
+		setTimeout(() => {
+			// handleScrollToSection('home');
+			removeLoader();
+		}, 10000);
+	}, []);
 
 	// useEffect(() => {
 	// 	const observer = new IntersectionObserver((entries) => {
