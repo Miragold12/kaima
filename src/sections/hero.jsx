@@ -185,8 +185,8 @@ const Hero = ({ mode }) => {
 					<Image
 						placeholder="blur"
 						priority
-						src={'/images/k_hero_img_one.png'}
-						blurDataURL={'/images/k_hero_img_one.png'}
+						src={'/images/k_hero_img_one.webp'}
+						blurDataURL={'/images/k_hero_img_one.webp'}
 						alt={'hero'}
 						width={640}
 						height={500}

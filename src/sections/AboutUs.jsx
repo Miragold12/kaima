@@ -11,6 +11,24 @@ import Navbar from 'components/Navbar';
 import Button from 'components/Button';
 
 const Brown = ({ mode }) => {
+	const sliderArr = [
+		'/images/slider/c_1.webp',
+		'/images/slider/c_2.jpg',
+		'/images/slider/c_3.jpg',
+		'/images/slider/c_4.jpg',
+		'/images/slider/c_5.jpg',
+		'/images/slider/c_6.jpg'
+	];
+
+	const brandSliderrArr = [
+		'/images/slider/c-1.jpg',
+		'/images/slider/c-2.jpg',
+		'/images/slider/c-3.jpg',
+		'/images/slider/c-4.jpg',
+		'/images/slider/c-5.jpg',
+		'/images/slider/c-6.jpg'
+	];
+
 	return (
 		<section
 			id="aboutus"
@@ -35,18 +53,9 @@ const Brown = ({ mode }) => {
 					)}
 
 					{/* IMAGE sn3D  slider section*/}
-					<div className="col_two w-full md:w-auto relative">
-						{/* <Image
-							src={
-								mode === 'brand'
-									? '/images/k_slider_imgs2.png'
-									: '/images/k_slider_imgs.png'
-							}
-							alt={'hero'}
-							width={620}
-							height={730}
-						/> */}
-						<Swiper
+					<div className="col_two w-full md:w-auto relative ml-12">
+						{
+							mode !== 'brand' ? (<Swiper
 							// install Swiper modules
 							spaceBetween={-50}
 							slidesPerView={2.5}
@@ -68,52 +77,44 @@ const Brown = ({ mode }) => {
 								slideShadows: true
 							}}
 							modules={[EffectCoverflow, Pagination]}
-							className="mySwiper"
+							className="mySwiper "
 						>
-							<SwiperSlide>
-								<Image
-									src={'/images/slider/one.png'}
-									alt={'hero'}
-									width={261}
-									height={480}
-								/>
-							</SwiperSlide>
-
-							<SwiperSlide>
-								<Image
-									src={'/images/slider/one.png'}
-									alt={'hero'}
-									width={261}
-									height={480}
-								/>
-							</SwiperSlide>
-
-							<SwiperSlide>
-								<Image
-									src={'/images/slider/one.png'}
-									alt={'hero'}
-									width={261}
-									height={480}
-								/>
-							</SwiperSlide>
-
-							<SwiperSlide>
-								<Image
-									src={'/images/slider/one.png'}
-									alt={'hero'}
-									width={261}
-									height={480}
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									src={'/images/slider/one.png'}
-									alt={'hero'}
-									width={261}
-									height={480}
-								/>
-							</SwiperSlide>
-						</Swiper>
+							{sliderArr.map((item, i) => (
+								<SwiperSlide key={i}>
+									<Image src={item} alt={'hero'} width={381} height={600} />
+								</SwiperSlide>
+							))}
+						</Swiper>): (<Swiper
+							// install Swiper modules
+							spaceBetween={-50}
+							slidesPerView={2.5}
+							// navigation
+							pagination={{ clickable: true }}
+							// scrollbar={{ draggable: true }}
+							onSwiper={(swiper) => console.log(swiper)}
+							onSlideChange={() => console.log('slide change')}
+							effect={'coverflow'}
+							grabCursor={true}
+							centeredSlides={true}
+							loop
+							// slidesPerView={'auto'}
+							coverflowEffect={{
+								// rotate: 50,
+								stretch: 0,
+								depth: 100,
+								modifier: 1,
+								slideShadows: true
+							}}
+							modules={[EffectCoverflow, Pagination]}
+							className="mySwiper "
+						>
+							{brandSliderrArr.map((item, i) => (
+								<SwiperSlide key={i}>
+									<Image src={item} alt={'hero'} width={381} height={600} />
+								</SwiperSlide>
+							))}
+						</Swiper>)
+						}
 					</div>
 					{/*  */}
 

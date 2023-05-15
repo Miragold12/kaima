@@ -12,7 +12,7 @@ import ContactUs from 'sections/ContactUs';
 import { disableBodyScroll } from 'utils';
 import Loader from 'components/Loader';
 const Brand = () => {
-		const [showLoader, setShowLoader] = useState(true);
+	const [showLoader, setShowLoader] = useState(true);
 
 	// function authModalHandler() {
 	// 	setShowAuthModal((p) => !p);
@@ -57,17 +57,16 @@ const Brand = () => {
 	}, []);
 	return (
 		<div className="landing-page w-full h-full">
-						<Loader brand/>
+			<Loader brand />
 			<Hero mode={'brand'} />
 			<AboutUs mode={'brand'} />
-{/* 
+			{/* 
 			{sectionData.map((i, k) => (
 				<div className="" key={k}>
 					<CustomSection sectionId={i.id} typeTwo={i.typeTwo} d={i} />
 				</div>
 			))} */}
 
-			
 			<div className="bg-[#F5F5F5] space-y-[58px] pb-[40px] md:pb-[0] md:space-y-0  custom_space">
 				{sectionData.map((i, k) => (
 					<div className="" key={k}>

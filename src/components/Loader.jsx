@@ -25,20 +25,20 @@ const Loader = ({ brand }) => {
 					<div className="w-full h-full  relative">
 						{brand ? (
 							<Image
-								src={'/images/k_loader-brand.png'}
+								src={'/images/k_loader-brand.webp'}
 								priority
 								placeholder="blur"
-								blurDataURL={'/images/k_loader.png'}
+								blurDataURL={'/images/k_loader.webp'}
 								fill
 								alt="kaima image"
 								className="hidden md:block"
 							/>
 						) : (
 							<Image
-								src={'/images/k_loader.png'}
+								src={'/images/k_loader.webp'}
 								priority
 								placeholder="blur"
-								blurDataURL={'/images/k_loader.png'}
+								blurDataURL={'/images/k_loader.webp'}
 								fill
 								alt="kaima image"
 								className="hidden md:block"
