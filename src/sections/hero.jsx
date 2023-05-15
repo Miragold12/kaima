@@ -79,7 +79,7 @@ const Hero = ({ mode }) => {
 				
 							<div className="middle_image absolute -top-[40%]  ">
 								<Image
-									src={'/images/brand/K_brand.png'}
+									src={'/images/brand/K_brand.jpg'}
 									alt={'hero'}
 									width={250}
 									height={430}
