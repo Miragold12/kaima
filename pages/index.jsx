@@ -35,7 +35,7 @@ const Home = () => {
 		}, 7000);
 
 		setTimeout(() => {
-			// removeLoader();
+			removeLoader();
 		}, 8500);
 	}, []);
 
