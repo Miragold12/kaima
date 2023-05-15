@@ -19,7 +19,7 @@ const navArray = [
 
 	{
 		name: 'Styling',
-		link: 'about'
+		link: 'aboutus'
 	},
 
 	{

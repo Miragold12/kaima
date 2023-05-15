@@ -40,21 +40,21 @@ const Brand = () => {
 
 	// USEFEECTS ---------------------------
 
-	useEffect(() => {
-		setTimeout(() => {
-			setShowLoader(false);
-		}, 8000);
+	// useEffect(() => {
+	// 	setTimeout(() => {
+	// 		setShowLoader(false);
+	// 	}, 8000);
 
-		setTimeout(() => {
-			handleScrollToSection('home');
-			// removeLoader();
-		}, 9000);
+	// 	setTimeout(() => {
+	// 		handleScrollToSection('home');
+	// 		// removeLoader();
+	// 	}, 9000);
 
-		setTimeout(() => {
-			// handleScrollToSection('home');
-			removeLoader();
-		}, 10000);
-	}, []);
+	// 	setTimeout(() => {
+	// 		// handleScrollToSection('home');
+	// 		removeLoader();
+	// 	}, 10000);
+	// }, []);
 	return (
 		<div className="landing-page w-full h-full">
 			<Loader brand />

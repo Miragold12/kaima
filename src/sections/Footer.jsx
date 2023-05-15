@@ -100,7 +100,7 @@ const Footer = () => {
 
 				{/* IMAGE -mobile screen*/}
 				<div className="col_two md:hidden pl-4">
-					<Image src={'/images/k_footer_slider.png'} alt={'hero'} width={706} height={200} />
+					<Image src={'/images/k_footer_slider.webp'} alt={'hero'} width={706} height={200} />
 				</div>
 			</div>
 

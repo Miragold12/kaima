@@ -29,6 +29,15 @@ const Brown = ({ mode }) => {
 		'/images/slider/c-6.jpg'
 	];
 
+
+	function handleScrollToSection(id) {
+		// console.log(id);
+		const element = document.getElementById(id);
+		element?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
+		console.log('i scrolled');
+	}
+
+
 	return (
 		<section
 			id="aboutus"
