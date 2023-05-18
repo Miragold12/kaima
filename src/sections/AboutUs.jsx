@@ -36,27 +36,27 @@ const Brown = ({ mode }) => {
 	return (
 		<section
 			id="aboutus"
-			className="bg-[#F5F5F5] w-screen  md:h-screen py-6 border border-transparent"
+			className="bg-[#F5F5F5] w-screen   md:h-screen py-6 border border-transparent"
 		>
 			<div className="brand w-full h-full   px-4 md:px-0 py-3 relative">
 				<Navbar active />
 
 				{/* main content */}
-				<div className="hero_content relative px-0 md:px-[56px] flex flex-col md:flex-row items-center   w-full h-auto py-[46px] md:py-0 ">
+				<div className="hero_content relative  px-0 md:px-[56px] flex flex-col md:flex-row items-center   w-full h-auto py-[46px] md:py-0 ">
 					{/* botom right text */}
 					{mode === 'brand' ? (
-						<p className=" hidden md:block  text-[#F5F5F533] text-xs text-left w-[300px] absolute bottom-0 right-11">
+						<p className=" hidden md:block  text-[#F5F5F54D] text-[12px] text-left w-[300px]  absolute bottom-[50px] right-[10%]">
 							Kaima is fully committed to your growth, not just as a business but also as a
 							brand.
 						</p>
 					) : (
-						<p className=" hidden md:block text-[#f5f5f533] text-xs text-left w-[380px] absolute bottom-0  -right-6">
+						<p className="font-roboto hidden md:block text-[#F5F5F54D] text-[12px] text-left w-[380px] absolute bottom-[60px]   right-11">
 							Find your own unique style and show up with confidence each time.
 						</p>
 					)}
 
 					{/* IMAGE sn3D  slider section*/}
-					<div className="col_two w-full md:w-auto relative md:ml-12">
+					<div className="col_two w-full md:w-auto relative md:ml-12 ">
 						{
 							mode !== 'brand' ? (<Swiper
 							// install Swiper modules
@@ -126,11 +126,11 @@ const Brown = ({ mode }) => {
 					{/* TEXT */}
 					{mode === 'brand' ? (
 						<div className="col_one w-full px-4  p-6 md:p-0    text-center md:text-left md:w-[480px]">
-							<p className="text-xm text-[#F5F5F580] font-normal	 font-eb leading-[20px]">
+							<p className="text-[12px] text-[#F5F5F580] font-normal	 font-eb leading-[20px]">
 								Build Brand Credibility
 							</p>
 
-							<h1 className="hidden  w-[550px] md:block text-bigger font-personal text-lg md:text-[29.3px] text-[#F5F5F5] leading-[70.06px] ">
+							<h1 className="hidden h-[140px]   w-[550px] md:block text-bigger font-personal text-lg md:text-[29.3px] text-[#F5F5F5] leading-[70.06px] ">
 								<span style={{ fontSize: '50px' }} className="text-sec you mr-2">
 									Sales
 								</span>
@@ -147,10 +147,7 @@ const Brown = ({ mode }) => {
 							</h1>
 
 							<h3 className="hidden mt-[16px] md:flex font-normal text-[15px] md:text-[18.75px] text-[#F5F5F599] font-eb">
-								We connect you to paying customers that see the value your brand brings
-								to the table. Kaima helps you take charge of your business growth by
-								giving you tools, a platform and due exposure We connect you to paying
-								customers that see the value your brand brings to the table.
+							We connect you to paying customers that see the value your brand brings to the table. Kaima helps you take charge of your business growth by giving you tools,  a platform and due exposure
 							</h3>
 
 							{/* mobile */}
@@ -205,18 +202,17 @@ const Brown = ({ mode }) => {
 								</div>
 							</div>
 
-							<h3 className=" text-[15px] md:text-[18.75px] md:mt-[16px] text-[#F5F5F5B2] leading-[30px] font-eb font-normal mt-[20px]">
-								With Kaima, luxury styling has been made accessible to you 24/7.
-								Irrespective of time or budget, there is always something perfect for
-								you right in your pocket.
+							<h3 className=" text-[15px] md:text-[18.75px] md:mt-[16px] text-[#F5F5F5B2] leading-[30px] md:w-[456px]  font-eb font-normal mt-[20px]">
+							With Kaima, luxury styling has been made accessible to you 24/7. Irrespective of time or budget, there is always something perfect for you right in your pocket!
 							</h3>
 
 							<div className="middle justify-center md:justify-start mt-[24px] md:mt-[32px]  md:space-x-2">
 								<div className="md:hidden w-4"></div>
 								<Button
-									text={'Get early access'}
+								roboto
+									text={'Get Started'}
 									click={() => handleScrollToSection('contact')}
-									style={{ color: '#fff' }}
+									style={{ color: '#fff', fontFamily: "Roboto, sans-serif" }}
 								/>
 								<Image
 									src={'/icons/k_arrow.svg'}

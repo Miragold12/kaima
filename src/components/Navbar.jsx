@@ -131,15 +131,14 @@ const Navbar = ({ toggle, active }) => {
 								/>
 							)}
 
-							{/* <h1 className="logo-text font-bold text-xl md:text-2xl">kaima</h1> */}
 						</Link>
 					</div>
 
 					{/* NAVBAR */}
 					<div
 						className={`nav_item-list h-[61px] ${
-							active ? 'text-white hidden' : ' text-txt lg:flex md:middle'
-						}   items-center hidden   space-x-14 font-normal hover:text-txt-hover`}
+							active ? 'text-white hidden' : 'text-txt lg:flex md:middle'
+						}   items-center hidden   space-x-[40px] font-normal hover:text-txt-hover`}
 					>
 						{navArray.map((item, key) => (
 							<button
@@ -151,7 +150,7 @@ const Navbar = ({ toggle, active }) => {
 							>
 								<h1
 									key={key}
-									className={`font-normal font-eb text-[12px] leading-[15.66px]`}
+									className={`font-normal  font-eb text-[12px] leading-[15.66px]`}
 								>
 									{item.name}
 								</h1>
@@ -162,7 +161,7 @@ const Navbar = ({ toggle, active }) => {
 					{/* CTO BUTTON */}
 					{active ? (
 						<Button
-							text={router.pathname == '/brand' ? 'Customer?' : 'Brand?'}
+							text={router.pathname == '/brand' ? 'Looking To Shop?' : 'Are You A Brand?'}
 							variant={'secondary'}
 							style={{ color: 'white' }}
 							click={() => handleCTO()}
@@ -171,7 +170,7 @@ const Navbar = ({ toggle, active }) => {
 					) : (
 						<Button
 							id={'brand_btn'}
-							text={router.pathname == '/brand' ? 'Customer?' : 'Brand?'}
+							text={router.pathname == '/brand' ? 'Looking To Shop?' : 'Are You A Brand?'}
 							click={() => handleCTO()}
 							variant={'secondary'}
 						/>

@@ -94,7 +94,7 @@ const ContactUs = () => {
 		<section id="contact" ref={contactRef} className="contact_us  h-auto relative md:mt-4 ">
 			<div className="full contact_us-waiting px-4 md:py-0 py-20">
 				<Navbar active />
-				<div className="action_container  text-txt-white md:mt-[96px] text-center flex flex-col items-center">
+				<div className="action_container   text-txt-white md:mt-[53px] text-center flex flex-col items-center">
 					<>
 						{isLoading ? (
 							<div className="loader_container flex flex-col items-center">
@@ -114,19 +114,19 @@ const ContactUs = () => {
 							</div>
 						) : (
 							<>
-								<h3 className="text-sm text-txt-white-fade capitalize">
+								<h3 className="text-[12px] font-eb font-normal  text-[#F5F5F5B2] capitalize">
 									get early access
 								</h3>
 
 								<h1 className=" font-personal text-[12px] w-[200px] md:text-[18.75px] leading-[26.89px] md:w-auto md:mx-auto md:leading-[44.83px] mt-[5px] md:mt-[8px] ">
-									Be The First To Know When We Launch
+								Be The First To Know When We Launch
 								</h1>
 								<form
 									onSubmit={formik.handleSubmit}
 									action=""
-									className="form_box flex gap-6 flex-col md:flex-row  mt-[40px]  md:mt-[47px] justify-center items-center md:items-end"
+									className="form_box flex gap-6  flex-col   mt-[40px]  md:mt-[32px] justify-center items-center md:items-end"
 								>
-									<div className="form_group flex flex-col md:flex-row gap-6  ">
+									<div className="form_group  flex flex-col gap-6 items-center ">
 										<div className="input_component text-center w-full md:w-[200px] h-auto text-sm text-[#F5F5F5] ">
 											<label
 												htmlFor=""
@@ -168,15 +168,15 @@ const ContactUs = () => {
 									</div>
 									{/*  */}
 									{/* import Button from 'components/Button'; */}
-									<div className="pb-[2px] relative">
+									<div className="pb-[2px] relative  mx-auto">
 										<Button
-											text={'subscribe'}
+											text={'submit'}
 											// click={() => setIsLoading(true)}
 											type="submit"
 											style={{
 												color: '#ffffff',
-												padding: '7px 30px',
-												fontSize: '12px'
+												padding: '11px 27px',
+												fontSize: '14px'
 											}}
 										/>
 									</div>

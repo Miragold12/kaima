@@ -41,28 +41,28 @@ const CustomSection = ({ sectionId, typeTwo, d }) => {
 					id="main_card"
 					className={`${
 						typeTwo ? 'main_card-two' : 'main_card'
-					} border-2  main_card p-[34px] stroke"`}
+					} border-2  main_card  p-[34px] stroke"`}
 				>
 					{/*  */}
 					<div
-						className={`main_card-content flex relative ${
+						className={`main_card-content  flex relative ${
 							typeTwo ? ' flex-row-reverse' : 'flex-row'
 						} items-center justify-between w-full h-full  `}
 					>
 						{/* TEXT */}
-						<div className="col_one  ml-8 text-left w-[490px] ">
-							<h1 className=" font-personal text-[29.3px] text-txt-hover leading-[70.06px]">
+						<div className="col_one  text-left   ">
+							<h1 className=" font-personal text-[29.3px] w-[482px] text-txt-hover leading-[70.06px]">
 								{d.mainText}
 							</h1>
 
-							<h3 className="font-normal mt-[8px] font-eb text-[18.75px] leading-[24.47px] text-[#251605b1]">
+							<h3 className="font-normal mt-[8px] font-eb text-[18.75px] w-[362px] leading-[24.47px] text-[#251605b1]">
 								{d.subText}
 							</h3>
 
 							<Button
-								text={'Get early access'}
+								text={'Get started'}
 								type={'ghost2'}
-								style={{ color: '#F1890E', marginTop: '20px' }}
+								style={{ color: '#F1890E', fontSize: "14px", marginTop: '20px' }}
 								click={() => handleScrollToSection('contact')}
 							/>
 						</div>

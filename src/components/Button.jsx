@@ -32,7 +32,7 @@ const navArray = [
 
 // listen to browser scroll
 
-const Button = ({ isLoading, text, click, icon, type, variant, disabled, full, ...rest }) => {
+const Button = ({ isLoading, roboto, text, click, icon, type, variant, disabled, full, ...rest }) => {
 
 	// console.log('the current scroll positio is', scrollPosition);
 
@@ -60,7 +60,7 @@ const Button = ({ isLoading, text, click, icon, type, variant, disabled, full, .
 
 				{/* <div className="w-2"></div> */}
 
-				{!isLoading && <p className={`text-[12px]`}>{text}</p>}
+				{!isLoading && <p className={`text-[14px] font-medium`}>{text}</p>}
 			</button>
 		);
 	}
@@ -87,7 +87,7 @@ const Button = ({ isLoading, text, click, icon, type, variant, disabled, full, .
 
 			{/* <div className="w-2"></div> */}
 
-			{!isLoading && <p className={`text-[12px]`}>{text}</p>}
+			{!isLoading && <p className={`text-[14px] font-medium  ${roboto && "font-roboto"}`}>{text}</p>}
 		</button>
 	);
 };

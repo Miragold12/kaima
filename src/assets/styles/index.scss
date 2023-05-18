@@ -208,12 +208,19 @@ text-align: center;
 // border: 1px solid red;
 
 &-bullet{
-	background-color: #F1890E;
+	background-color: #F1890E4D !important;
+	width: 5.48 !important;
+	height: 5.48 !important;
+	&-active{
+		background-color: #F1890ECC !important;
+		width: 7.3 !important;
+		height: 7.3 !important;
+	}
 }
 
 }
 
 .swiper-slide-next, .swiper-slide-prev{
 	transform: scale(0.9) !important;
-	opacity: 0.8 !important;
+	opacity: 0.5 !important;
 }

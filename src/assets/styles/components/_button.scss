@@ -1,5 +1,5 @@
 .btn {
-	@apply p-[7px] leading-[15.66px] px-[18px] rounded-md capitalize middle font-eb space-x-2;
+	@apply p-[11px] leading-[15.66px]  rounded-md capitalize middle font-eb space-x-2;
 
 	&.primary {
 		@apply bg-sec text-black border-[0.6px] border-sec;
@@ -7,6 +7,8 @@
 
 	&.sec {
 		@apply bg-transparent text-[#110200] border-[0.6px] border-sec;
+		color:  #110200;
+		
 	}
 
 	&:disabled {
@@ -24,7 +26,7 @@
 	}
 
 	&.ghost2 {
-		@apply bg-transparent text-[#F1890E] border border-sec;
+		@apply bg-transparent text-[#F1890E] border border-[#F1890E];
 	}
 }
 
