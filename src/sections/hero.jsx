@@ -146,7 +146,7 @@ const Hero = ({ mode }) => {
 
 				<div className="space_x h-4 md:h-0  md:w-[]"></div>
 				{/* IMAGE */}
-				<div className="col_two relative w-[334px] h-[332px] br  md:w-[740px] md:h-[90vh]">
+				<div className="col_two relative w-[334px] h-[332px]   md:w-[740px] md:h-[90vh]">
 					<Image
 						placeholder="blur"
 						priority
