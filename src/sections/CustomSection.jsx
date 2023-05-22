@@ -86,7 +86,7 @@ const CustomSection = ({ sectionId, typeTwo, d }) => {
 				>
 					{/* TEXT */}
 					<div className="col_one  space-y-3 text-left w-[300px] 	 md:w-[490px] ">
-						<h1 className="text-bigger font-personal  md:text-[25.8px] text-txt-hover leading-[200%]">
+						<h1 className="text-bigger font-personal text-xs  md:text-[25.8px] text-txt-hover leading-[200%]">
 							{d.mainText}
 						</h1>
 

@@ -115,7 +115,7 @@ const Hero = ({ mode }) => {
 			{/* HERO CONTENT */}
 			<div className="hero_content z-10   relative pt-[10px]  md:pb-[100px]  md:mt-0 flex flex-col-reverse md:flex-row items-center md:justify-between w-full md:pl-[60px]   mx-auto h-auto ">
 				{/* TEXT */}
-				<div className="col_one w-full px-4  p-6 md:p-0  text-center md:text-left md:w-[490px] z-20 relative ">
+				<div className="col_one w-full px-4  p-6 md:p-0 text-center md:text-left md:w-[490px] z-20 relative">
 					<p className="text-xs leading-[20px] font-normal font-eb text-[#11020081]">
 						Style That Speaks Confidence!
 					</p>
@@ -146,7 +146,7 @@ const Hero = ({ mode }) => {
 
 				<div className="space_x h-4 md:h-0  md:w-[]"></div>
 				{/* IMAGE */}
-				<div className="col_two relative  w-[740px] h-[90vh]">
+				<div className="col_two relative w-[334px] h-[332px] br  md:w-[740px] md:h-[90vh]">
 					<Image
 						placeholder="blur"
 						priority

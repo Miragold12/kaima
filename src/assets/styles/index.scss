@@ -190,9 +190,15 @@ body {
 
 
 .mySwiper{
-	width: 580px;
+	width: 650px;
 	margin-top: 20px;
+
+	@media  screen and (max-screen: 1200px) {
+	// width: 450px;
 	// @apply br;
+
+		
+	}
 	@include smallPhone{
 	width: 100%;
 	// width: 300px;
