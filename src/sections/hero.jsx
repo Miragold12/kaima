@@ -139,14 +139,14 @@ const Hero = ({ mode }) => {
 
 				
 
-					<p className="text-[#11020032] md:absolute md:-right-[180px]   mt-[60px] text-[12px] md:text-center font-normal leading-[20px] font-eb w-[274px] hidden md:block">
+					<p className="text-[#11020032] md:absolute md:-right-[30%]   mt-[60px] text-[12px] md:text-center font-normal leading-[20px] font-eb w-[274px] hidden md:block">
 						We’ve made it possible for you to explore new opportunities and express yourself  through personal styling.
 					</p>
 				</div>
 
 				<div className="space_x h-4 md:h-0  md:w-[]"></div>
 				{/* IMAGE */}
-				<div className="col_two relative w-[334px] h-[332px]   md:w-[740px] md:h-[90vh]">
+				<div className="hidden col_two relative w-[334px] h-[332px]   md:max-w-[740px] md:w-[640px]  md:h-[500px] lg:w-[740px]  lg:h-[90vh] md:max-h-[90vh]">
 					<Image
 						placeholder="blur"
 						priority
@@ -158,6 +158,19 @@ const Hero = ({ mode }) => {
 						fill
 					/>
 				</div>
+
+				<div className="col_two relative w-[50%] h-[90vh]">
+				<Image
+					placeholder="blur"
+					priority
+					src={'/images/k_hero_img_one.webp'}
+					blurDataURL={'/images/k_hero_img_one.webp'}
+					alt={'hero'}
+					// width={640}
+					// height={500}
+					fill
+				/>
+			</div>
 			</div>
 		</section>
 	);
