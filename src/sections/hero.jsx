@@ -38,16 +38,16 @@ const Hero = ({ mode }) => {
 						</p>
 
 						{/* box one */}
-						<div className="col_one md:w-[350px] text-center md:text-left h-auto mt-[150px]   md:-mt-[124px]">
+						<div className="col_one md:w-[350px] text-center md:text-left h-auto mt-[150px]   md:-mt-[124px] ">
 							<p className="flex text-[12px] leading-[20px] md:leading-[15.66px] w-full centered md:justify-start  font-normal text-[#11020080]">
 								Support For Every Step
 							</p>
 
-							<h1 className=" font-personal text-txt font-normal text-[29.3px] w-[200px] mx-auto md:mx-0  leading-[70.83px]  md:w-[309px]">
+							<h1 className=" font-personal text-[#110200] font-normal text-[18.75px]  md:text-[29.3px]  w-[205px] mx-auto md:mx-0 leading-[44.83px]  md:leading-[70.83px]  md:w-[309px]">
 								Grow Your Fashion Brand
 							</h1>
 
-							<h3 className="text-medium text-[18.75px] leading-[30px]  text-[#11020099] w-[349px] md:w-full md:mt-[12px] mt-[8px]">
+							<h3 className="text-medium text-[18.75px] leading-[30px]  text-[#110200B2] w-[349px] md:w-full md:mt-[12px] mt-[8px]">
 								Build a business in fashion that you are proud of with our powerful
 								tools. Let’s help you grow in the fashion space.
 							</h3>
@@ -74,12 +74,13 @@ const Hero = ({ mode }) => {
 							</div>
 						</div>
 
+
 						{/* centered image ---mobile */}
 						<div className="relative md:hidden h-[280px] w-[250px] ">
 				
 							<div className="middle_image absolute -top-[40%]  ">
 								<Image
-									src={'/images/brand/K_brand.webp'}
+									src={'/images/brand/K_brand_m.png'}
 									alt={'hero'}
 									width={250}
 									height={430}
@@ -116,7 +117,7 @@ const Hero = ({ mode }) => {
 			<div className="hero_content z-10   relative pt-[10px]  md:pb-[100px]  md:mt-0 flex flex-col-reverse md:flex-row items-center md:justify-between w-full md:pl-[60px]   mx-auto h-auto ">
 				{/* TEXT */}
 				<div className="col_one w-full px-4  p-6 md:p-0 text-center md:text-left md:w-[490px] z-20 relative">
-					<p className="text-xs leading-[20px] font-normal font-eb text-[#11020081]">
+					<p className="text-xs leading-[20px] font-normal  font-eb text-[#11020081]">
 						Style That Speaks Confidence!
 					</p>
 
@@ -136,8 +137,6 @@ const Hero = ({ mode }) => {
 							click={() => handleScrollToSection('contact')}
 						/>
 					</div>
-
-				
 
 					<p className="text-[#11020032] md:absolute md:-right-[30%]   mt-[60px] text-[12px] md:text-center font-normal leading-[20px] font-eb w-[274px] hidden md:block">
 						We’ve made it possible for you to explore new opportunities and express yourself  through personal styling.
@@ -159,7 +158,7 @@ const Hero = ({ mode }) => {
 					/>
 				</div>
 
-				<div className="col_two relative w-[50%] h-[90vh]">
+				<div className="col_two relative w-full h-[322px] md:w-[50%] md:h-[90vh]">
 				<Image
 					placeholder="blur"
 					priority

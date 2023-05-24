@@ -1,5 +1,5 @@
 .hero {
-	@apply h-auto md:h-auto w-screen px-4 md:px-0   relative bg-[#F5F5F5] ;
+	@apply h-auto md:h-screen w-screen px-4 md:px-0   relative bg-[#F5F5F5] ;
 	background-size: cover;
 	background-position: center;
 	// opacity: 0.06;
@@ -29,6 +29,8 @@
 	}
 
 	.hero_content {
+
+		
 		&::after {
 			content: ' ';
 			display: block;

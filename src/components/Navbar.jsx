@@ -117,14 +117,14 @@ const Navbar = ({ toggle, active }) => {
 						<Link href={'/'} className="logo_container middle space-x-3">
 							{active ? (
 								<Image
-									src="/icons/k_logo_sec.svg"
+									src="/icons/k_logo_new_w.svg"
 									alt="kaima logo"
 									width={89}
 									height={48}
 								/>
 							) : (
 								<Image
-									src="/icons/k_logo_main.svg"
+									src="/icons/k_logo_new.svg"
 									alt="kaima logo"
 									width={89}
 									height={48}

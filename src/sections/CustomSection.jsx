@@ -51,11 +51,11 @@ const CustomSection = ({ sectionId, typeTwo, d }) => {
 					>
 						{/* TEXT */}
 						<div className="col_one  text-left   ">
-							<h1 className=" font-personal text-[29.3px] w-[482px] text-txt-hover leading-[70.06px]">
+							<h1 className=" font-personal text-[29.3px] w-[482px] text-[#110200] leading-[70.06px]">
 								{d.mainText}
 							</h1>
 
-							<h3 className="font-normal mt-[8px] font-eb text-[18.75px] w-[362px] leading-[24.47px] text-[#251605b1]">
+							<h3 className="font-normal mt-[8px] font-eb text-[18.75px] w-[362px] leading-[24.47px] text-[#110200B2]">
 								{d.subText}
 							</h3>
 
