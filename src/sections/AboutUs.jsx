@@ -46,31 +46,6 @@ const Brown = ({ mode }) => {
 		}
 	}
 
-	useEffect(() => {
-		const sectionElement = sectionRef.current;
-
-		const observer = new IntersectionObserver((entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					// Section is visible in the viewport
-					console.log('Section is visible in the viewport');
-					sectionElement.scrollIntoView({ behavior: 'smooth' });
-
-					sectionRef.current.scrollIntoView({
-						behavior: 'smooth',
-						block: 'start',
-						inline: 'nearest'
-					});
-				}
-			});
-		});
-
-		observer.observe(sectionElement);
-
-		return () => {
-			observer.unobserve(sectionElement);
-		};
-	}, []);
 
 	return (
 		<section

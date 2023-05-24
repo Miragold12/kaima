@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head>
 				<title>kaima</title>
-				<meta name="viewport" content="width=device-width, initial-scale=1.1"></meta>
+				<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 				<link rel="icon" href="/icons/fav.svg" />
 				
 			

@@ -27,16 +27,25 @@ const Form = ({ onValidated, status, message, setIsSuccessfull, setIsLoading }) 
 						MERGE0: values.email
 					});
 
-                              setTimeout(() => {
-                                    if(status == 'success'){
-                                          setIsSuccessfull(true);
-                                    } 
-                              }, 2000);
+                           
 
                             
 			} catch (error) {}
 		}
 	});
+
+
+	useEffect(() => {
+		if(status == 'success'){
+			setIsSuccessfull(true);
+		} 
+	
+		if(status == 'error'){
+			setIsSuccessfull(false);
+		}
+		
+	}, [setIsSuccessfull, status])
+	
 
 
 
