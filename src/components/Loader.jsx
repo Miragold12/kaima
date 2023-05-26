@@ -73,7 +73,7 @@ const Loader = ({ brand }) => {
 				>
 					<div className="content ">
 						<div className="mx-auto w-auto h-auto  centered">
-							<Image src="/images/k_logo.svg" alt="kaima logo" width={159} height={90} />
+							<Image src="/icons/k_logo_new_w.svg" alt="kaima logo" width={159} height={90} />
 						</div>
 
 						<h1 className="text-center pulse capitalize	 font-personal text-[18.75px] md:text-[45.78px] md:leading-[109.47px] mt-[22px] text-[#F5F5F5] font-normal">

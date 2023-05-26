@@ -19,7 +19,6 @@ const Form = ({ onValidated, status, message, setIsSuccessfull, setIsLoading }) 
 		// validationSchema: Yup.object(contactSchema),
 		onSubmit: async (values) => {
 			try {
-				console.log('i clicked', values);
 
 				values.email.indexOf('@') > -1 &&
 					onValidated({

@@ -21,7 +21,6 @@ const InputFied = ({ type, click, icon, disabled, label, change, value, blur, er
 	}
 
 	function togglePasswordMode() {
-		console.log(passwordMode, type);
 
 		if (passwordMode === 'text') {
 			setPasswordMode('password');
@@ -31,7 +30,6 @@ const InputFied = ({ type, click, icon, disabled, label, change, value, blur, er
 	}
 
 	function typeHandler(type) {
-		console.log(passwordMode, 'i ran from here ');
 
 		if (type === 'password') {
 			return passwordMode;

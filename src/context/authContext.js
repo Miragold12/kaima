@@ -15,7 +15,6 @@ const AuthProvider = ({ children }) => {
 		let User = localStorage.getItem('warehouse-user');
 
 		if (User) {
-			console.log('user has been initialized to state');
 			setLogedInUser(JSON.parse(User));
 		}
 	}

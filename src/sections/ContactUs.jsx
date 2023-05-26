@@ -28,7 +28,6 @@ const ContactUs = () => {
 
 		onSubmit: async (values) => {
 			try {
-				console.log('i clicked');
 
 				setIsLoading(true);
 				setTimeout(() => {

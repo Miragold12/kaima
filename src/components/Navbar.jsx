@@ -49,7 +49,6 @@ const Navbar = ({ toggle, active }) => {
 		// console.log(id);
 		const element = document.getElementById(id);
 		element?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' });
-		console.log('i scrolled');
 	}
 
 	function handleMenu() {
@@ -59,7 +58,6 @@ const Navbar = ({ toggle, active }) => {
 	function handleCTO() {
 		let { pathname } = router;
 
-		console.log(pathname === '/brand');
 		if (pathname === '/brand') return router.push('/');
 		router.push('/brand');
 	}

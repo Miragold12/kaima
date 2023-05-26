@@ -15,9 +15,7 @@ import useScreen from 'hooks/useScreen';
 const Brown = ({ mode }) => {
 	const { isMobile, width } = useScreen();
 	const sectionRef = useRef(null);
-	console.log(width);
 
-	console.log(isMobile);
 	const sliderArr = [
 		'/images/slider/c_1.webp',
 		'/images/slider/c_2.jpg',
