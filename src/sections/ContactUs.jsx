@@ -99,7 +99,7 @@ const ContactUs = () => {
 				<div className="action_container   text-txt-white md:mt-[53px] text-center flex flex-col items-center">
 					<MailchimpSubscribe
 						url={
-							'https://gmail.us8.list-manage.com/subscribe/post?u=e4be66a87356b392a7ee68bf3&id=903ef71804'
+							'https://fashion.us21.list-manage.com/subscribe/post?u=cf1cc823ae3e04a9a856eead5&id=ae785d9288'
 						}
 						render={({ subscribe, status, message }) => (
 							<Form

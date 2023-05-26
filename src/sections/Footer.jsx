@@ -81,7 +81,7 @@ const Footer = () => {
 			{/* row one */}
 			<div className=" flex flex-col space-y-3 md:space-y-0  	 h-1/2  gap-5 md:gap-0 md:flex-row justify-center md:justify-between items-start md:items-center ">
 				<div className="text_box text-txt-white space-y-3 ml-4 md:ml-0">
-					<h1 className=" font-personal font-normal text-[18.75px] text-[#F5F5F5] leading-[28.69px] md:leading-[44.83px] md:w-[461px]">
+					<h1 className=" font-personal font-normal md:text-[18.75px] text-[#F5F5F5] leading-[32.69px] md:leading-[44.83px] md:w-[461px]">
 					Let Us Walk You Through Some Of Our Amazing Features
 					</h1>
 
