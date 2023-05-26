@@ -153,7 +153,7 @@ const Footer = () => {
 					<div className="col_list items-end flex   w-[140%]  ">
 					
 							
-						<h3 className="text-medium text-[8px]  md:text-xs text-[#f5f5f54d]">
+						<h3 className="text-medium text-[8px]  md:text-xs text-[#F5F5F533]">
 					A Product Of Kaima Business LTD, 2023
 				</h3>
 					</div>
