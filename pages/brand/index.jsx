@@ -27,11 +27,11 @@ const Brand = () => {
 
 		setTimeout(() => {
 			handleScrollToSection('home');
-		}, 5000);
+		}, 3500);
 
 		setTimeout(() => {
 			removeLoader();
-		}, 5500);
+		}, 4500);
 	}, []);
 
 	return (

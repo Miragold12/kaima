@@ -26,17 +26,18 @@ const Home = () => {
 	}
 
 	useEffect(() => {
+
 		setTimeout(() => {
 			revealSite();
-		}, 3000);
+		}, 3000)
 
 		setTimeout(() => {
 			handleScrollToSection('home');
-		}, 4000);
+		}, 3500);
 
 		setTimeout(() => {
 			removeLoader();
-		}, 5500);
+		}, 4500);
 	}, []);
 
 	// return;
