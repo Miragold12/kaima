@@ -109,7 +109,12 @@ const Footer = () => {
 
 				{/* ---------------- */}
 				<div className="logo_box space-y-4  md:-mt-[10px]">
-					<Image src="/icons/k_logo_sec.svg" alt="kaima logo" width={89} height={48} />
+					<Image
+									src="/icons/k_logo_new_w.svg"
+									alt="kaima logo"
+									width={89}
+									height={48}
+								/>
 					<div className="space-y-2">
 						<h3 className="text-medium text-[8px] md:text-xs ">Kaima400@gmail.com</h3>
 						<h3 className="text-medium text-[8px] md:text-xs  ">CC 2023</h3>

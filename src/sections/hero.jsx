@@ -7,10 +7,6 @@ import Navbar from 'components/Navbar';
 import { handleScrollToSection } from 'utils';
 
 const Hero = ({ mode }) => {
-
-
-
-
 	if (mode == 'brand') {
 		return (
 			<section id="home" className="hero hero-brand w-full  md:h-[110vh]">
@@ -65,6 +61,8 @@ const Hero = ({ mode }) => {
 						<div className="relative hidden md:block  h-[400px] w-[250px] ">
 							<div className="middle_image absolute  -top-[30%] ">
 								<Image
+									placeholder="blur"
+									blurDataURL={'/images/k_hero_img_one.webp'}
 									src={'/images/brand/K_brand.webp'}
 									alt={'hero'}
 									width={300}
@@ -74,12 +72,13 @@ const Hero = ({ mode }) => {
 							</div>
 						</div>
 
-
 						{/* centered image ---mobile */}
 						<div className="relative md:hidden h-[280px] w-[250px] ">
-				
 							<div className="middle_image absolute -top-[40%]  ">
 								<Image
+															placeholder="blur"
+						blurDataURL={'/images/k_hero_img_one.webp'}
+
 									src={'/images/brand/K_brand_m.png'}
 									alt={'hero'}
 									width={250}
@@ -139,7 +138,8 @@ const Hero = ({ mode }) => {
 					</div>
 
 					<p className="text-[#11020032] md:absolute md:-right-[30%]   mt-[60px] text-[12px] md:text-center font-normal leading-[20px] font-eb w-[274px] hidden md:block">
-						We’ve made it possible for you to explore new opportunities and express yourself  through personal styling.
+						We’ve made it possible for you to explore new opportunities and express yourself
+						through personal styling.
 					</p>
 				</div>
 
@@ -159,17 +159,17 @@ const Hero = ({ mode }) => {
 				</div>
 
 				<div className="col_two relative w-full h-[322px] md:w-[50%] md:h-[90vh]">
-				<Image
-					placeholder="blur"
-					priority
-					src={'/images/k_hero_img_one.webp'}
-					blurDataURL={'/images/k_hero_img_one.webp'}
-					alt={'hero'}
-					// width={640}
-					// height={500}
-					fill
-				/>
-			</div>
+					<Image
+						placeholder="blur"
+						priority
+						src={'/images/k_hero_img_one.webp'}
+						blurDataURL={'/images/k_hero_img_one.webp'}
+						alt={'hero'}
+						// width={640}
+						// height={500}
+						fill
+					/>
+				</div>
 			</div>
 		</section>
 	);

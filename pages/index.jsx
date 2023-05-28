@@ -34,7 +34,7 @@ const Home = () => {
 		setTimeout(() => {
 			handleScrollToSection('home');
 		}, 3500);
-s
+
 		setTimeout(() => {
 			removeLoader();
 		}, 4500);
