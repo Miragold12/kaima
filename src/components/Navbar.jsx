@@ -24,7 +24,7 @@ const navArray = [
 
 	{
 		name: 'Shop',
-		link: 'how'
+		link: 'contact'
 	}
 ];
 

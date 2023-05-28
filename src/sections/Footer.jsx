@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const navOne = [
@@ -48,22 +49,22 @@ const navTwo = [
 const navThree = [
 	{
 		name: 'Telegram',
-		link: '#home'
+		link: '#contact'
 	},
 
 	{
 		name: 'Twitter',
-		link: '#about'
+		link: 'http://Twitter.com/Kaimafashion'
 	},
 
 	{
 		name: 'Instagram',
-		link: '#how'
+		link: 'https://instagram.com/kaima.fashion?igshid=NTc4MTIwNjQ2YQ=='
 	},
 
 	{
 		name: 'Call Us on +234709990432',
-		link: '#how'
+		link: '#contact'
 	}
 ];
 
@@ -82,11 +83,11 @@ const Footer = () => {
 			<div className=" flex flex-col space-y-3 md:space-y-0  	 h-1/2  gap-5 md:gap-0 md:flex-row justify-center md:justify-between items-start md:items-center ">
 				<div className="text_box text-txt-white space-y-3 ml-4 md:ml-0">
 					<h1 className=" font-personal font-normal md:text-[18.75px] text-[#F5F5F5] leading-[32.69px] md:leading-[44.83px] md:w-[461px]">
-					Let Us Walk You Through Some Of Our Amazing Features
+						Let Us Walk You Through Some Of Our Amazing Features
 					</h1>
 
 					<h3 className="text-medium w-[211px] md:w-[403px]  md:text-[18.75px] text-[12px]  md:leading-[30px] leading-[20px] text-[#F5F5F5B2] font-eb">
-					Explore our many interesting features so you know how much we have in store for you!
+						Explore our many interesting features so you know how much we have in store for you!
 					</h3>
 				</div>
 
@@ -94,7 +95,12 @@ const Footer = () => {
 
 				{/* IMAGE -destop screen*/}
 				<div className="col_two hidden md:block  relative w-[616px]   h-[200px]">
-					<Image src={'/images/k_brandfunc.png'} alt={'hero'} fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+					<Image
+						src={'/images/k_brandfunc.png'}
+						alt={'hero'}
+						fill
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+					/>
 				</div>
 
 				{/* IMAGE -mobile screen*/}
@@ -105,16 +111,9 @@ const Footer = () => {
 
 			{/* row two-- */}
 			<div className="mt-11 md:mt-0 	  md:row footer_row px-4 md:px-0 flex flex-col md:flex-row text-[#f5f5f5] font-eb font-normal  h-1/2  gap-6 md:justify items-start md:items-center relative ">
-			
-
 				{/* ---------------- */}
 				<div className="logo_box space-y-4  md:-mt-[10px]">
-					<Image
-									src="/icons/k_logo_new_w.svg"
-									alt="kaima logo"
-									width={89}
-									height={48}
-								/>
+					<Image src="/icons/k_logo_new_w.svg" alt="kaima logo" width={89} height={48} />
 					<div className="space-y-2">
 						<h3 className="text-medium text-[8px] md:text-xs ">Kaima400@gmail.com</h3>
 						<h3 className="text-medium text-[8px] md:text-xs  ">CC 2023</h3>
@@ -148,7 +147,7 @@ const Footer = () => {
 					<div className="col_list  ">
 						{navThree.map((i, k) => (
 							<h3 key={k} className="text-medium text-[8px] md:text-xs ">
-								{i.name}
+								<Link href={i.link}>{i.name}</Link>
 							</h3>
 						))}
 					</div>
@@ -156,11 +155,9 @@ const Footer = () => {
 					<div className="col_list hidden md:block w-[50%] "></div>
 
 					<div className="col_list items-end flex   w-[140%]  ">
-					
-							
 						<h3 className="text-medium text-[8px]  md:text-xs text-[#F5F5F533]">
-					A Product Of Kaima Business LTD, 2023
-				</h3>
+							A Product Of Kaima Business LTD, 2023
+						</h3>
 					</div>
 				</div>
 			</div>
