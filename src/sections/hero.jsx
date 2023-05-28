@@ -77,9 +77,9 @@ const Hero = ({ mode }) => {
 							<div className="middle_image absolute -top-[40%]  ">
 								<Image
 															placeholder="blur"
-						blurDataURL={'/images/k_hero_img_one.webp'}
+						blurDataURL={'/images/K_brand_m.webp'}
 
-									src={'/images/brand/K_brand_m.png'}
+									src={'/images/brand/K_brand_m.webp'}
 									alt={'hero'}
 									width={250}
 									height={430}
